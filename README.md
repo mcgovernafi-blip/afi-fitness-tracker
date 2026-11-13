@@ -1,6 +1,6 @@
 # AFI Fitness Tracker
 
-Offline workout log for one person at Planet Fitness. It is a mobile-first web app meant to be installed on an iPhone Home Screen. Phase 1 only: five workout templates, set logging, the machine catalog, Project 22 suggestions, and a history that does not change after you finish.
+Offline workout log for one person at Planet Fitness. The supported daily path is the iPhone Home Screen icon. Logging in a browser tab is for testing only: automated checks and a desk preview. Phase 1 only: five workout templates, set logging, the machine catalog, Project 22 suggestions, and a history that does not change after you finish.
 
 Copyright (c) 2026 mcgovernafi-blip, owner of this source. All rights reserved.
 
@@ -118,7 +118,7 @@ When you later turn Pages on yourself: Settings → Pages → Deploy from a bran
 5. Settings, or Export & backup, should show the storage line. Take a full JSON backup into Files or iCloud Drive.
 6. Updates: open the icon once online. The service worker swaps in the new shell. IndexedDB is migrated in place. This phase only has schema version 1, and a backup from a newer app is refused rather than guessed.
 
-A Safari tab shows a banner. Home Screen use is the one that keeps storage past WebKit’s tab limit. Logging still works in the tab so the app can be tested; do your real gym sessions from the icon, and keep backups.
+The Home Screen icon is the supported way to log workouts day to day. It is the install that keeps its own storage. A browser tab, including a Safari tab, is for testing only (CI and a local preview). The tab shows an Add to Home Screen banner. Keep backups.
 
 ## Tests
 
@@ -138,7 +138,7 @@ See [docs/TESTING.md](docs/TESTING.md). The iPhone pass is [docs/IPHONE-UAT.md](
 - **D-13** You own the source. `package.json` is `private` and has no `license` field.
 - **D-14** Data stays on the device. No analytics, no sync, no third-party requests.
 
-Logging in a browser tab is allowed, with the Home Screen banner. The plan said a tab should refuse logging. CI and a local preview are tabs, so blocking them would make the app untestable. Real sessions should still use the icon.
+The Home Screen icon is the supported daily path. Logging in a browser tab is for testing only. The plan said a tab should refuse logging. CI and a local preview run in a tab, so the app still accepts entries there and shows the Add to Home Screen banner. Gym sessions belong on the icon.
 
 Phase 2 and Phase 3 are not started.
 

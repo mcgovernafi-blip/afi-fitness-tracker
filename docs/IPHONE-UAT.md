@@ -1,6 +1,6 @@
 # iPhone UAT
 
-Do this on the phone, from the Home Screen icon, after one online open. Phase 1 is accepted only when you sign this off. Use a workout you are willing to throw away, or back up first.
+Do this on the phone, from the Home Screen icon, after one online open. The Home Screen icon is the supported daily path. Logging in a browser tab is for testing only and is not this sign-off. Phase 1 is accepted only when you sign this off. Use a workout you are willing to throw away, or back up first.
 
 Airplane-mode and swipe-away are at the bottom. They are part of the pass.
 
