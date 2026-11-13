@@ -1,0 +1,38 @@
+{
+  "name": "afi-fitness-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AFI Fitness Tracker Phase 1. Copyright (c) 2026 mcgovernafi-blip, owner of this source. All rights reserved.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:pages": "VITE_BASE=/afi-fitness-tracker/ vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "npm run build && playwright test",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "dexie": "^4.4.7",
+    "preact": "^11.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.0",
+    "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "fake-indexeddb": "^6.2.8",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0"
+  }
+}
