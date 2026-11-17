@@ -1,0 +1,7 @@
+{
+  "repo": "mcgovernafi-blip/afi-fitness-tracker",
+  "source": "PR #1 head (draft, unmerged)",
+  "sha": "ada709159aa02e7f86e2fc4cf065d7391999568a",
+  "build": "npm ci && npm run build:pages (VITE_BASE=/afi-fitness-tracker/)",
+  "ruling": "MR-CES-20261117-01"
+}
